@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="返回" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="设置" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="标题"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:layout_weight="1"
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="消息"
+                android:button="@null"
+                android:textColor="@color/radio_color" 
+                android:drawableTop="@drawable/ic_action_message_radio"
+                android:gravity="center"
+                 />
+
+            <RadioButton
+                android:layout_weight="1"
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系人" 
+                android:button="@null"
+                android:textColor="@color/radio_color" 
+                android:drawableTop="@drawable/ic_action_contact_radio"
+               android:gravity="center"
+                />
+
+            <RadioButton
+                android:layout_weight="1"
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="动态" 
+                android:button="@null"
+                android:textColor="@color/radio_color" 
+                android:drawableTop="@drawable/ic_action_news_radio"
+                android:gravity="center"
+                />
+            <RadioButton
+                android:layout_weight="1"
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关于" 
+                android:button="@null"
+                android:textColor="@color/radio_color" 
+                android:drawableTop="@drawable/ic_action_setting_radio"
+              android:gravity="center"
+                />
+        </RadioGroup>
+    </LinearLayout>
+    
+
+</LinearLayout>
